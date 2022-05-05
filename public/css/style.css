@@ -1,0 +1,164 @@
+@font-face {
+  font-family: Bungee;
+  src: url("https://cdn.glitch.global/6d14b47e-6756-406f-b7e6-b2fe41af7bd6/Bungee-Regular.ttf?v=1643124323918");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("https://cdn.glitch.global/6d14b47e-6756-406f-b7e6-b2fe41af7bd6/Roboto-Bold.ttf?v=1643146998108");
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 7vw;
+  margin: 0;
+  font-family: Bungee, cursive;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+p {
+  margin: 0;
+  font-size: 3.5vw;
+}
+
+body.inside {
+  background-image: url("https://cdn.glitch.global/6d14b47e-6756-406f-b7e6-b2fe41af7bd6/subtle-dark-vertical.png?v=1643131341051"),
+    linear-gradient(#161a1d, #2c343a);
+}
+
+body.outside {
+  background-color: #f2edeb;
+  color: #2c343a;
+}
+
+body.inside h1,
+body.inside h2,
+body.inside p {
+  color: transparent;
+  background: linear-gradient(45deg, #0acdff, #05f140);
+  background-clip: text;
+  background: -webkit-linear-gradient(200deg, #0acdff, #05f140);
+  -webkit-background-clip: text;
+}
+
+article {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  article {
+    width: 700px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+dl {
+  text-align: left;
+}
+
+dd,
+dt {
+  font-size: 14px;
+}
+
+dt.question {
+  color: #09d4dc;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+dd.answer {
+  color: #06e774;
+  margin: 0 0 1em 1em;
+}
+
+a {
+  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+  color: inherit;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-content {
+  visibility: hidden;
+  width: 70vw;
+  max-width: 400px;
+  background-color: #161a1d;
+  border-radius: 10px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin: -36px 0 0 20px;
+  transition: opacity 0.5s;
+}
+
+.tooltip-content.show {
+  visibility: visible;
+  opacity: 0.95;
+}
+
+.tooltip-content.hide {
+  opacity: 0;
+}
+
+.glow {
+  -webkit-filter: drop-shadow(0px 0px 30px #669966);
+  filter: drop-shadow(0px 0px 20px #669966);
+}
+
+.icon {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.icon.twitter {
+  margin-top: 3vw;
+  width: 6vw;
+  max-width: 50px;
+}
+
+.icon.question {
+  width: 5vw;
+  max-width: 40px;
+}
+
+.trophy {
+  width: 40vw;
+  max-width: 400px;
+}
+
+.lock {
+  margin: -5vw 0 -2vw;
+  width: 40vw;
+  max-width: 400px;
+}
